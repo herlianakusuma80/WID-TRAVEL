@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wid's Travel Agent</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Wid's Travel Agent</h1>
+    <div>
+      <a href="#tour">Tour</a>
+      <a href="#car">Sewa Mobil</a>
+      <a href="#contact">Kontak</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="container hero fade">
+    <div>
+      <span class="badge">Travel & Transport Terpercaya</span>
+      <h1>Solusi Perjalanan & Transportasi Terpercaya</h1>
+      <p>
+        Wid's Travel Agent melayani paket tour wisata domestik 
+        serta penyewaan mobil lengkap dengan driver profesional.
+      </p>
+      <button class="btn" onclick="scrollToContact()">Hubungi Sekarang</button>
+    </div>
+    <img src="img/jeep3.jpeg" alt="Travel">
+  </section>
+
+  <section class="trust">
+  <div class="container trust-grid fade">
+
+    <div class="trust-item">
+      <span class="icon">🚗</span>
+      <h4>Mobil Bersih & Terawat</h4>
+      <p>Armada rutin diservis</p>
+      <small>1000+ trip sukses</small>
+    </div>
+
+    <div class="trust-item">
+      <span class="icon">👨‍✈️</span>
+      <h4>Driver Berpengalaman</h4>
+      <p>Ramah & profesional</p>
+      <small>5+ tahun pengalaman</small>
+    </div>
+
+    <div class="trust-item">
+      <span class="icon">💬</span>
+      <h4>Admin Fast Response</h4>
+      <p>Siap 24 jam</p>
+      <small>Balas < 5 menit</small>
+    </div>
+
+    <div class="trust-item">
+      <span class="icon">⭐</span>
+      <h4>Rating Tinggi</h4>
+      <p>Testimoni pelanggan</p>
+      <small>★★★★★ (4.9/5)</small>
+    </div>
+
+  </div>
+</section>
+
+<section id="paket-kebutuhan">
+  <div class="container">
+    <h2 class="title fade">Pilih Paket Sesuai Kebutuhan</h2>
+
+    <div class="need-grid fade">
+      <div class="need-card">👨‍👩‍👧 Family Tour</div>
+      <div class="need-card">💑 Honeymoon</div>
+      <div class="need-card">🎒 Backpacker</div>
+      <div class="need-card">🏢 Corporate</div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Tour Services -->
+  <section id="tour">
+  <div class="grid">
+
+  <div class="card fade tour-card">
+    <img src="img/bali3.jpg">
+    <div class="tour-body">
+      <span class="tour-tag">Best Seller</span>
+      <h3>Bali Family Tour 3D2N</h3>
+
+      <ul class="tour-list">
+        <li>✔ Hotel bintang 3</li>
+        <li>✔ Mobil + Driver</li>
+        <li>✔ Tiket wisata utama</li>
+        <li>✔ Dokumentasi</li>
+      </ul>
+
+      <p class="tour-note">Cocok untuk keluarga & anak</p>
+
+      <button class="btn small" onclick="openWA()">Cek Jadwal</button>
+    </div>
+  </div>
+
+  <div class="card fade tour-card">
+    <img src="img/rock3.jpg">
+    <div class="tour-body">
+      <span class="tour-tag">Romantis</span>
+      <h3>Jogja Honeymoon Tour</h3>
+
+      <ul class="tour-list">
+        <li>✔ Hotel romantis</li>
+        <li>✔ Private transport</li>
+        <li>✔ Dinner spesial</li>
+        <li>✔ Dekor kamar</li>
+      </ul>
+
+      <p class="tour-note">Favorit pasangan baru</p>
+
+      <button class="btn small" onclick="openWA()">Cek Jadwal</button>
+    </div>
+  </div>
+
+  <div class="card fade tour-card">
+    <img src="img/pantai1.jpg">
+    <div class="tour-body">
+      <span class="tour-tag">Hemat</span>
+      <h3>Java Backpacker Tour</h3>
+
+      <ul class="tour-list">
+        <li>✔ Transport sharing</li>
+        <li>✔ Guide lokal</li>
+        <li>✔ Destinasi populer</li>
+      </ul>
+
+      <p class="tour-note">Budget friendly</p>
+
+      <button class="btn small" onclick="openWA()">Cek Jadwal</button>
+    </div>
+  </div>
+
+</div>
+</section>
+
+  <!-- Car Rental -->
+  <section id="car">
+    <div class="container">
+      <h2 class="title fade">Sewa Mobil + Driver</h2>
+      <div class="grid">
+        <div class="card fade">
+          <img src="img/mobil2.jpg" />
+          <h3>City Car</h3>
+          <p>Nyaman untuk perjalanan dalam kota.</p>
+        </div>
+        <div class="card fade">
+          <img src="img/mobil4.jpg" />
+          <h3>MPV & Family Car</h3>
+          <p>Cocok untuk keluarga dan rombongan.</p>
+        </div>
+        <div class="card fade">
+          <img src="img/mobil3.jpg" />
+          <h3>Big Car</h3>
+          <p>Perjalanan rombongan terasa lebih nyaman.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="harga">
+  <div class="container">
+    <h2 class="title fade">Daftar Harga Sewa Mobil</h2>
+
+    <div class="price-table fade">
+      <p style="text-align:center;font-size:0.8rem;color:#64748b;margin-top:10px">
+  ⇅ Scroll untuk melihat semua harga
+      </p>
+      <div class="price-row header">
+        <span>Tipe Mobil</span>
+        <span>Durasi</span>
+        <span>Harga</span>
+      </div>
+
+      <div class="price-row">
+        <span>City Car(Tanpa Driver)</span>
+        <span>24 jam</span>
+        <span>Rp 300.000</span>
+      </div>
+
+      <div class="price-row">
+        <span>MPV / Family Car(Tanpa Driver)</span>
+        <span>24 Jam</span>
+        <span>Rp 350.00 - Rp 400.000</span>
+      </div>
+
+      <div class="price-row">
+        <span>City Car(Tanpa Driver)</span>
+        <span>24 jam</span>
+        <span>Rp 300.000</span>
+      </div>
+
+      <div class="price-row">
+        <span> Innova Reborn + Driver</span>
+        <span>24 jam</span>
+        <span>Rp 800.000</span>
+      </div>
+
+      <div class="price-row">
+        <span>Fortuner GR + Driver</span>
+        <span>24 jam</span>
+        <span>Rp 1.200.000</span>
+      </div>
+
+      <div class="price-row">
+        <span>Pajero + Driver</span>
+        <span>24 jam</span>
+        <span>Rp 1.200.000</span>
+      </div>
+
+      <div class="price-row">
+        <span>Hiace Commuter Standart + Driver</span>
+        <span>24 jam</span>
+        <span>Rp 1.300.000</span>
+      </div>
+
+      <div class="price-row">
+        <span>Hiace Premio Standart + Driver</span>
+        <span>24 jam</span>
+        <span>Rp 1.800.000</span>
+      </div>
+      <div class="price-row">
+        <span>Hiace Luxury Standart + Driver</span>
+        <span>24 jam</span>
+        <span>Rp 2.400.000</span>
+      </div>
+
+      <div class="price-row">
+        <span>Elf Short + Driver</span>
+        <span>24 jam</span>
+        <span>Rp 1.200.000</span>
+      </div>
+
+      <div class="price-row">
+        <span>Elf Long + Driver</span>
+        <span>24 jam</span>
+        <span>Rp 1.600.000</span>
+      </div>
+    </div>
+
+    <p class="price-note fade">
+      *Harga belum termasuk BBM.  
+      <br>
+      *Harga dapat berubah saat <strong>high / peak season</strong>, hari libur nasional, dan event tertentu.
+    </p>
+  </div>
+</section>
+
+<div style="text-align:center;margin-top:30px">
+  <button class="btn" onclick="openWA()">Cek Tanggal & Harga</button>
+</div>
+
+<section id="testimoni">
+  <div class="container">
+    <h2 class="title fade">Testimoni Pelanggan</h2>
+
+    <div class="testimonial-wrapper fade">
+      <div class="testimonial-track">
+
+        <div class="testimonial">
+          <img src="img/testimoni3.jpeg" alt="Flavio">
+          <div class="stars">★★★★★</div>
+          <p>
+            “Pelayanan sangat ramah dan profesional. Mobil bersih, driver tepat waktu.
+            Liburan kami jadi nyaman dan tenang.”
+          </p>
+          <h4>Flavio</h4>
+          <span>Italia</span>
+        </div>
+
+        <div class="testimonial">
+          <img src="img/testimoni2.jpeg" alt="Harta">
+          <div class="stars">★★★★★</div>
+          <p>
+            “Tour Jogja-nya recommended banget. Admin fast response dan itinerary rapi.”
+          </p>
+          <h4>Harta Sutanto</h4>
+          <span>Medan</span>
+        </div>
+
+        <div class="testimonial">
+          <img src="img/testimoni1.jpeg" alt="H.Yanto">
+          <div class="stars">★★★★★</div>
+          <p>
+            “Sewa mobil untuk keluarga sangat memuaskan. Driver sopan dan berpengalaman.”
+          </p>
+          <h4>H. Yanto</h4>
+          <span>Garut</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- CTA Contact -->
+  <section id="contact" class="cta fade">
+    <h2>Hubungi Wid's Travel Agent</h2>
+    <p>
+      <strong>Diyan</strong><br>
+      📞 <strong>+62 857-2525-5200</strong><br />
+      📱 WhatsApp & Telepon (24 Jam)
+    </p>
+    <button class="btn" style="background:white;color:#0284c7" onclick="openWA()">Chat WhatsApp</button>
+  </section>
+
+  <footer>
+    © 2026 Wid's Travel Agent. All rights reserved.
+  </footer>
+
+  <script src="script.js">
+</script>
+
+   <a href="https://wa.me/6285725255200" class="wa-float" target="_blank">
+  WA
+    </a>
+
+
+</body>
+</html>
